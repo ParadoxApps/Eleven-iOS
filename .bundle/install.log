@@ -1,0 +1,11 @@
+# Logfile created on 2014-02-04 05:58:25 -0600 by logger.rb/41954
+I, [2014-02-04T05:58:25.047988 #4776]  INFO -- : 0:  rake (10.1.1) from /Users/tyrichards/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/specifications/rake-10.1.1.gemspec
+I, [2014-02-04T05:58:26.166173 #4776]  INFO -- : 0:  i18n (0.6.9) from /Users/tyrichards/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/specifications/i18n-0.6.9.gemspec
+I, [2014-02-04T05:58:30.269357 #4776]  INFO -- : 0:  multi_json (1.8.2) from /Users/tyrichards/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/specifications/multi_json-1.8.2.gemspec
+I, [2014-02-04T05:58:32.172191 #4776]  INFO -- : 0:  activesupport (3.2.16) from /Users/tyrichards/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/specifications/activesupport-3.2.16.gemspec
+I, [2014-02-04T05:58:33.379411 #4776]  INFO -- : 0:  builder (3.2.2) from /Users/tyrichards/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/specifications/builder-3.2.2.gemspec
+I, [2014-02-04T05:58:36.556447 #4776]  INFO -- : 0:  motion-yaml (1.2) from /Users/tyrichards/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/specifications/motion-yaml-1.2.gemspec
+I, [2014-02-04T05:58:37.720280 #4776]  INFO -- : 0:  plist (3.1.0) from /Users/tyrichards/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/specifications/plist-3.1.0.gemspec
+I, [2014-02-04T05:58:38.936512 #4776]  INFO -- : 0:  ruby-xcdm (0.0.5) from /Users/tyrichards/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/specifications/ruby-xcdm-0.0.5.gemspec
+I, [2014-02-04T05:58:40.760837 #4776]  INFO -- : 0:  cdq (0.1.2) from /Users/tyrichards/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/specifications/cdq-0.1.2.gemspec
+I, [2014-02-04T05:58:40.761458 #4776]  INFO -- : 0:  bundler (1.5.1) from /Users/tyrichards/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/specifications/bundler-1.5.1.gemspec
