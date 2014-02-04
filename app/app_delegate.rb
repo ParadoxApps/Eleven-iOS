@@ -7,10 +7,10 @@ class AppDelegate
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
     @tabController = UITabBarController.new
 
-    @postsNavController = UINavigationController.alloc.initWithRootViewController(PostsController.new)
-    @pseudonymNavController = UINavigationController.alloc.initWithRootViewController(PseudonymController.new)
+    @tonesNavController = UINavigationController.alloc.initWithRootViewController(TonesController.new)
+    @userNavController = UINavigationController.alloc.initWithRootViewController(UserController.new)
 
-    @tabController.viewControllers = [@postsNavController, @pseudonymNavController]
+    @tabController.viewControllers = [@tonesNavController, @userNavController]
 
     @window.rootViewController = @tabController
     @window.makeKeyAndVisible

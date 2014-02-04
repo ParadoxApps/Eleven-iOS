@@ -1,21 +1,21 @@
 
 schema "0001 initial" do
 
-  entity "Pseudonym" do
+  entity "User" do
     string :name
     string :bio
 
-    has_many :posts
+    has_many :tones
   end
 
-  entity "Post" do
+  entity "Tone" do
     string :title
     string :content
 
     datetime :created_at
     datetime :updated_at
 
-    belongs_to :pseudonym
+    belongs_to :user
   end
 
 end

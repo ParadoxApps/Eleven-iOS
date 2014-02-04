@@ -1,0 +1,3 @@
+class Tone < CDQManagedObject
+
+end

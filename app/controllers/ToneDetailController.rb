@@ -1,31 +1,31 @@
-class PostDetailController < UIViewController
-  attr_accessor :post
+class ToneDetailController < UIViewController
+  attr_accessor :tone
 
-  def initWithPost(post)
+  def initWithTone(tone)
     self.init
-    self.post = post
-    self.title = post.title
+    self.tone = tone
+    self.title = tone.title
     self
   end
 
   def viewDidLoad
     self.navigationItem.rightBarButtonItem = editButton
-    @postView = PostView.alloc.initWithFrame(self.view.frame, andPost:self.post)
-    self.view.addSubview(@postView)
+    @toneView = ToneView.alloc.initWithFrame(self.view.frame, andTone:self.tone)
+    self.view.addSubview(@toneView)
   end
 
   def edit
     self.navigationItem.setRightBarButtonItem(saveButton, animated:true)
-    @postView.contentView.editable = true
-    @postView.contentView.becomeFirstResponder
+    @toneView.contentView.editable = true
+    @toneView.contentView.becomeFirstResponder
   end
 
   def save
     self.navigationItem.setRightBarButtonItem(editButton, animated:true)
-    @postView.contentView.resignFirstResponder
-    @postView.contentView.editable = false
-    self.post.content = @postView.contentView.text
-    self.post.updated_at = Time.now
+    @toneView.contentView.resignFirstResponder
+    @toneView.contentView.editable = false
+    self.tone.content = @toneView.contentView.text
+    self.tone.updated_at = Time.now
     cdq.save
     self.navigationController.viewControllers[0].tableView.reloadData
   end

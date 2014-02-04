@@ -1,11 +1,11 @@
-class PseudonymController < UIViewController
-  attr_accessor :pseudonym
+class UserController < UIViewController
+  attr_accessor :user
 
   def init
     super
     self.title = "Profile"
     self.tabBarItem = UITabBarItem.alloc.initWithTitle("Profile", image:UIImage.imageNamed("Profile"), tag:1)
-    self.pseudonym = Pseudonym.first || Pseudonym.create
+    self.user = User.first || User.create
     cdq.save
     self
   end
@@ -16,8 +16,8 @@ class PseudonymController < UIViewController
    self.navigationItem.rightBarButtonItem = saveButton
 
     self.view.backgroundColor = UIColor.whiteColor
-    @pseudonymView = PseudonymView.alloc.initWithFrame(self.view.frame, andPseudonym:self.pseudonym)
-    self.view.addSubview(@pseudonymView)
+    @userView = UserView.alloc.initWithFrame(self.view.frame, andUser:self.user)
+    self.view.addSubview(@userView)
   end
 
   def saveButton
@@ -25,9 +25,9 @@ class PseudonymController < UIViewController
   end
 
   def save
-    @pseudonymView.subviews.each { |v| v.resignFirstResponder }
-    self.pseudonym.name = @pseudonymView.nameField.text
-    self.pseudonym.bio = @pseudonymView.bioField.text
+    @userView.subviews.each { |v| v.resignFirstResponder }
+    self.user.name = @userView.nameField.text
+    self.user.bio = @userView.bioField.text
     cdq.save
     UIAlertView.alloc.initWithTitle("Profile Updated", message:nil, delegate:nil, cancelButtonTitle:"OK", otherButtonTitles:nil).show
   end
